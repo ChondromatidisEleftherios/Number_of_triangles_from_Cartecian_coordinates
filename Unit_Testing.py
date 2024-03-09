@@ -60,7 +60,7 @@ def calc():
     return n, mo, di, ta # Returns Multiple Values #
 
 
-class Test_ergasia(unittest.TestCase):
+class Test_C_points(unittest.TestCase):
     def test(self):
         cou, avg, dim, typ = calc() # cou = n, avf = mo, dim = di, typ = ta #
         self.assertEqual(cou, 161673)
