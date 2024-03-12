@@ -27,7 +27,6 @@ def calc():
     y = 0
     z = 0
     emvada = []
-    semvada = []
     count = 0
     while x < n:
         y = x + 2
@@ -49,12 +48,12 @@ def calc():
 
     n = len(emvada)
     print("Dekta Trigwna:", n)
-    semvada = utils.taksin(n, emvada)
-    mo = utils.mo(n, semvada)
+   emvada.sort()
+    mo = utils.mo(n, emvada)
     print("Mesos oros", mo)
-    di = utils.diam(n, semvada)
+    di = utils.diam(n, emvada)
     print("Diamesos", di)
-    ta = utils.apokl(n, semvada)
+    ta = utils.apokl(n, emvada)
     print("Typikh apoklish", ta)
     file.close()
     return n, mo, di, ta # Returns Multiple Values #
