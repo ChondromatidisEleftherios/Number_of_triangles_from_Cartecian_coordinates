@@ -1,22 +1,6 @@
 import math
 
 
-def taksin(megethos, pin):  # Selection Sort #
-    co = 0
-    co2 = 0
-    mikrth = 0.0
-    while co < megethos:
-        mikrth = co
-        co2 = co + 1
-        while co2 < megethos:
-            if pin[mikrth] > pin[co2]:
-                mikrth = co2
-            co2 = co2 + 1
-        pin[co], pin[mikrth] = pin[mikrth], pin[co]
-        co = co + 1
-    return pin
-
-
 def dis(x1, y1, x2, y2): # Calculates Distance between two points #
     ap = 0.0
     ap = math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1))
