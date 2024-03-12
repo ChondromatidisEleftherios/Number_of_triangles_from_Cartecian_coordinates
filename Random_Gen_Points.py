@@ -44,26 +44,26 @@ while x < n:
 print("Number of Triangles:", count)
 n = 0
 n = len(emvada)
-semvada = utils.taksin(n, emvada)
+emvada.sort()
 print("Statistics using custom functions (Max: Two decimal places)")
-mo = utils.mo(n, semvada)
+mo = utils.mo(n, emvada)
 print("Average:", mo)
-diames = utils.diam(n, semvada)
+diames = utils.diam(n, emvada)
 print("Median:", diames)
-r = utils.rang(n, semvada)
+r = utils.rang(n, emvada)
 print("Range:", r)
-apoklish = utils.apokl(n, semvada)
+apoklish = utils.apokl(n, emvada)
 print("Standard Deviation:", apoklish)
 mo = 0.0
 diames = 0.0
 r = 0.0
 apoklish = 0.0
 print("Statistics using the Statistics module (Max: Two decimal places)")
-mo = statistics.mean(semvada)
+mo = statistics.mean(emvada)
 print("Average:", round(mo, 2))
-diames = statistics.median(semvada)
+diames = statistics.median(emvada)
 print("Median:", round(diames, 2))
-apoklish = statistics.stdev(semvada)
+apoklish = statistics.stdev(emvada)
 print("Standard Deviation:", round(apoklish, 2))
 
 # CODE BY: ELEFTHERIOS CHONDROMATIDIS #
